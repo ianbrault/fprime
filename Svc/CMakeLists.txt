@@ -44,6 +44,7 @@ add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/FrameAccumulator/")
 add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/FramingProtocol/")
 add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Health/")
 add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/OsTime/")
+add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/PassiveCmdDispatcher")
 add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/PassiveRateGroup")
 add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/PolyDb/")
 add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/PrmDb/")
@@ -63,7 +64,7 @@ if (FPRIME_ENABLE_SERIAL_HUBS)
 	add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/GenericHub/")
 endif()
 
-# Text logger components included by default, 
+# Text logger components included by default,
 # but can be disabled if FW_ENABLE_TEXT_LOGGING=0 is desired.
 if (FPRIME_ENABLE_TEXT_LOGGERS)
 	add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/PassiveConsoleTextLogger/")
